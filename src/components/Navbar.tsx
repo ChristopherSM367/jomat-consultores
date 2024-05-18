@@ -2,7 +2,7 @@ export const Navbar = () => {
 
 
   return (
-    <header id="header home">
+    <header id="header">
       <div className="container fnt_title">
         <div className="row align-items-center justify-content-between d-flex">
           <div id="logo">

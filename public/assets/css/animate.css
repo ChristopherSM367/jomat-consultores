@@ -38,9 +38,9 @@
   animation-fill-mode: both;
 }
 
-   .element-animate {
-     opacity:0;
-   }
+.element-animate {
+  opacity:0;
+}
 
 .animated.infinite {
   animation-iteration-count: infinite;

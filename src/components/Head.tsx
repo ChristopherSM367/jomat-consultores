@@ -57,6 +57,7 @@ const Head = () => {
         <script type="text/javascript" src="/assets/jquery/lib/jquery-1.11.1.js"></script>
         <script type="text/javascript" src="/assets/jquery/dist/jquery.validate.js"></script>
         <script type="text/javascript" src="/assets/jquery/dist/jquery.aniview.js"></script>
+        <body></body>
       </Helmet>
     </HelmetProvider>
   )

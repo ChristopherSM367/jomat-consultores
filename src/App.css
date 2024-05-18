@@ -11,7 +11,7 @@
   height: auto;
 }
 
-.img-fluid.mx-auto {
+.img-fluid.mx-auto.tam-peq {
   max-width: 120px;
 }
 

@@ -86,7 +86,7 @@ const Home = () => {
           </p>
           <div className="row pt-10">
             <div className="col-lg-4 pt-30 text-center">
-              <img src="/assets/img/inicio/aumentar.png" className="img-fluid mx-auto" alt="aumenta"></img>
+              <img src="/assets/img/inicio/aumentar.png" className="img-fluid mx-auto tam-peq" alt="aumenta"></img>
               <p className="fnt_title fs-35 text-center">
                 Impulsar tu Marca
               </p>
@@ -95,7 +95,7 @@ const Home = () => {
               </p>
             </div>
             <div className="col-lg-4 pt-30 text-center">
-              <img src="/assets/img/inicio/guia.png" className="img-fluid mx-auto" alt="guia"></img>
+              <img src="/assets/img/inicio/guia.png" className="img-fluid mx-auto tam-peq" alt="guia"></img>
               <p className="fnt_title fs-35 text-center">
                 Comunicación
               </p>
@@ -104,7 +104,7 @@ const Home = () => {
               </p>
             </div>
             <div className="col-lg-4 pt-30 text-center">
-              <img src="/assets/img/inicio/resultados.png" className="img-fluid mx-auto" alt="resultados"></img>
+              <img src="/assets/img/inicio/resultados.png" className="img-fluid mx-auto tam-peq" alt="resultados"></img>
               <p className="fnt_title fs-35 text-center">
                 Resultados
               </p>
@@ -123,7 +123,7 @@ const Home = () => {
           </p>
           <div className="row pt-10">
             <div className="col-lg-4 pt-30 text-center">
-              <img src="/assets/img/inicio/web-icon.png" className="img-fluid mx-auto" alt="web"></img>
+              <img src="/assets/img/inicio/web-icon.png" className="img-fluid mx-auto tam-peq" alt="web"></img>
               <p className="fnt_title fs-35 text-center color_blanco">
                 Sitios Web
               </p>
@@ -132,7 +132,7 @@ const Home = () => {
               </p>
             </div>
             <div className="col-lg-4 pt-30 text-center">
-              <img src="/assets/img/inicio/design.png" className="img-fluid mx-auto" alt="web"></img>
+              <img src="/assets/img/inicio/design.png" className="img-fluid mx-auto tam-peq" alt="web"></img>
               <p className="fnt_title fs-35 text-center color_blanco">
                 Diseño
               </p>
@@ -141,7 +141,7 @@ const Home = () => {
               </p>
             </div>
             <div className="col-lg-4 pt-30 text-center">
-              <img src="/assets/img/inicio/venta-pc.png" className="img-fluid mx-auto" alt="web"></img>
+              <img src="/assets/img/inicio/venta-pc.png" className="img-fluid mx-auto tam-peq" alt="web"></img>
               <p className="fnt_title fs-35 text-center color_blanco">
                 Venta Equipo
               </p>
