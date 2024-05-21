@@ -1,5 +1,5 @@
-import { Navbar } from "./Navbar"
-import { Footer } from "./Footer"
+import { Navbar } from "./includes/Navbar"
+import { Footer } from "./includes/Footer"
 import { useEffect } from "react"
 
 const Home = () => {
@@ -213,25 +213,20 @@ const Home = () => {
       </section>
       <div id='toTop'><img src="/assets/img/inicio/up.png" className="img-fluid mx-auto" alt=""></img></div>
       <Footer></Footer>
-      <div id="loader" className="show fullscreen">
-        <svg className="circular" width="48px" height="48px">
-          <circle className="path-bg" cx="24" cy="24" r="22" fill="none" strokeWidth="4" stroke="#eeeeee" />
-          <circle className="path" cx="24" cy="24" r="22" fill="none" strokeWidth="4" strokeMiterlimit="10" stroke="#00B398" />
-        </svg>
-      </div>
+      
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
       <script type="text/javascript" src="/assets/js/scroll_logo.js"></script>
-      <script src="/assets/js/vendor/bootstrap.min.js"></script>
-      <script src="/assets/js/easing.min.js"></script>
       <script src="/assets/js/hoverIntent.js"></script>
-      <script src="/assets/js/superfish.min.js"></script>
-      <script src="/assets/js/owl.carousel.min.js"></script>
       <script src="/assets/js/validation/contact_validation.js"></script>
       <script src="/assets/js/main.js"></script>
+      <script src="/assets/js/jquery.sticky.js"></script>
+      <script src="/assets/js/vendor/bootstrap.min.js"></script>
+      <script src="/assets/js/easing.min.js"></script>
+      <script src="/assets/js/superfish.min.js"></script>
+      <script src="/assets/js/owl.carousel.min.js"></script>
       <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
       <script src="/assets/js/jquery.nice-select.min.js"></script>
-      <script src="/assets/js/jquery.sticky.js"></script>
       <script src="/assets/js/jquery.waypoints.min.js"></script>
       <script src="/assets/js/jquery.magnific-popup.min.js"></script>
     </>
@@ -239,3 +234,11 @@ const Home = () => {
 }
 
 export default Home
+
+// eslint-disable-next-line no-lone-blocks
+{/* <div id="loader" className="show fullscreen">
+  <svg className="circular" width="48px" height="48px">
+    <circle className="path-bg" cx="24" cy="24" r="22" fill="none" strokeWidth="4" stroke="#eeeeee" />
+    <circle className="path" cx="24" cy="24" r="22" fill="none" strokeWidth="4" strokeMiterlimit="10" stroke="#00B398" />
+  </svg>
+</div> */}

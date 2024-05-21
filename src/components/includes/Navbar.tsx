@@ -2,12 +2,11 @@ export const Navbar = () => {
 
 
   return (
-    <header id="header">
+    <header id="header" className="">
       <div className="container fnt_title">
         <div className="row align-items-center justify-content-between d-flex">
           <div id="logo">
             <a href="Home" title="inicio"><img src="/assets/img/logo/logo-bco.png" id="logo-img" alt="logo" /></a>
-            <a href="Home" title="inicio"><img src="/assets/img/logo/logo.png" className="logo-movil" alt="logo_" /></a>
           </div>
           <nav id="nav-menu-container">
             <ul className="nav-menu d-none d-lg-block">
