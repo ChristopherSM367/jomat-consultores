@@ -1,3 +1,11 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-new-func */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-restricted-globals */
+/* eslint-disable array-callback-return */
+/* eslint-disable no-mixed-operators */
+/* eslint-disable no-self-compare */
+/* eslint-disable eqeqeq */
 /*!
  * jQuery JavaScript Library v1.11.1
  * http://jquery.com/
@@ -749,6 +757,7 @@ try {
 	);
 	// Support: Android<4.0
 	// Detect silently failing push.apply
+	// eslint-disable-next-line no-unused-expressions
 	arr[ preferredDoc.childNodes.length ].nodeType;
 } catch ( e ) {
 	push = { apply: arr.length ?
@@ -1912,6 +1921,7 @@ Expr = Sizzle.selectors = {
 			// Accessing this property makes selected-by-default
 			// options in Safari work properly
 			if ( elem.parentNode ) {
+				// eslint-disable-next-line no-unused-expressions
 				elem.parentNode.selectedIndex;
 			}
 
@@ -2637,7 +2647,7 @@ var rsingleTag = (/^<(\w+)\s*\/?>(?:<\/\1>|)$/);
 
 
 
-var risSimple = /^.[^:#\[\.,]*$/;
+var risSimple = /^.[^:#\\[\\.,]*$/;
 
 // Implement the identical functionality for filter and not
 function winnow( elements, qualifier, not ) {
@@ -7844,6 +7854,7 @@ jQuery.extend({
 						} catch ( _ ) {
 
 							// Will be executed only in IE6
+							// eslint-disable-next-line no-unused-expressions
 							option.scrollHeight;
 						}
 
@@ -8472,7 +8483,7 @@ var rquery = (/\?/);
 
 
 
-var rvalidtokens = /(,)|(\[|{)|(}|])|"(?:[^"\\\r\n]|\\["\\\/bfnrt]|\\u[\da-fA-F]{4})*"\s*:?|true|false|null|-?(?!0\d)\d+(?:\.\d+|)(?:[eE][+-]?\d+|)/g;
+var rvalidtokens = /(,)|(\[|{)|(}|])|"(?:[^"\\\r\n]|\\["\\\\/bfnrt]|\\u[\da-fA-F]{4})*"\s*:?|true|false|null|-?(?!0\d)\d+(?:\.\d+|)(?:[eE][+-]?\d+|)/g;
 
 jQuery.parseJSON = function( data ) {
 	// Attempt to parse using the native JSON parser first
@@ -8554,7 +8565,7 @@ var
 	rlocalProtocol = /^(?:about|app|app-storage|.+-extension|file|res|widget):$/,
 	rnoContent = /^(?:GET|HEAD)$/,
 	rprotocol = /^\/\//,
-	rurl = /^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,
+	rurl = /^([\w.+-]+:)(?:\/\/(?:[^\\/?#]*@|)([^\\/?#:]*)(?::(\d+)|)|)/,
 
 	/* Prefilters
 	 * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)

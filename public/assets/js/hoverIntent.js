@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /*!
  * hoverIntent v1.8.1 // 2014.08.11 // jQuery v1.9.1+
  * http://briancherne.github.io/jquery-hoverIntent/
@@ -31,14 +32,14 @@
  */
 
 ;(function(factory) {
-    'use strict';
+    
     if (typeof define === 'function' && define.amd) {
         define(['jquery'], factory);
     } else if (jQuery && !jQuery.fn.hoverIntent) {
         factory(jQuery);
     }
 })(function($) {
-    'use strict';
+    
 
     // default configuration values
     var _cfg = {

@@ -1,6 +1,7 @@
-import { Navbar } from "./includes/Navbar"
-import { Footer } from "./includes/Footer"
+import { Navbar } from "../../includes/Navbar"
+import { Footer } from "../../includes/Footer"
 import { useEffect } from "react"
+import Head from "../../includes/Head"
 
 const Home = () => {
   useEffect(() => {
@@ -33,50 +34,72 @@ const Home = () => {
 
   return (
     <>
+      <Head></Head>
       <Navbar></Navbar>
       <div className="slider-item banner-home fondo-azul-base" style={{ backgroundImage: "url('/assets/img/slider_horizontal/base.jpg')" }}>
         <div className="degradado3"></div>
       </div>
-      <section className="home-slider owl-carousel div-to-fondo">
-        <div className="slider-item banner-home" style={{ backgroundImage: "url('/assets/img/slider_horizontal/transparente.png')" }}>
-          <div className="container">
-            <div className="row slider-text align-items-center justify-content-start">
-              <div className="banner-content col-lg-10 mx-auto element-animate">
-                <div className="text-center">
-                  <h1 className="titulos titulobanner font_title_bold lh1 centrar"> Sitios Web </h1>
-                  <span className="d-none d-lg-block"> Diseñamos tu página web a tu medida y al mejor precio </span>
+      <section className="home-slider owl-carousel div-to-fondo owl-loaded owl-drag">
+        <div className="owl-stage-outer">
+          <div className="owl-stage">
+            <div className="owl-item cloned">
+              <div className="slider-item banner-home" style={{ backgroundImage: "url('/assets/img/slider_horizontal/transparente.png')" }}>
+                <div className="container">
+                  <div className="row slider-text align-items-center justify-content-start">
+                    <div className="banner-content col-lg-10 mx-auto element-animate">
+                      <div className="text-center">
+                        <h1 className="titulos titulobanner font_title_bold lh1 centrar"> Sitios Web </h1>
+                        <span className="d-none d-lg-block"> Diseñamos tu página web a tu medida y al mejor precio </span>
+                      </div>
+                      <img src="/assets/img/slider_horizontal/pc-web.png" className="img-fluid mx-auto pt-30" alt=""></img>
+                    </div>
+                  </div>
                 </div>
-                <img src="/assets/img/slider_horizontal/pc-web.png" className="img-fluid mx-auto pt-30" alt=""></img>
               </div>
             </div>
           </div>
         </div>
-        <div className="slider-item banner-home" style={{ backgroundImage: "url('/assets/img/slider_horizontal/transparente.png')" }}>
-          <div className="container">
-            <div className="row slider-text align-items-center justify-content-start">
-              <div className="banner-content col-lg-10 mx-auto element-animate">
-                <div className="text-center">
-                  <h1 className="titulos titulobanner font_title_bold lh1 centrar"> Diseño Gráfico </h1>
-                  <span className="d-none d-lg-block"> Diseñamos tu logo e identidad gráfica </span>
+        
+        <div className="owl-stage-outer">
+          <div className="owl-stage">
+            <div className="owl-item cloned">
+              <div className="slider-item banner-home" style={{ backgroundImage: "url('/assets/img/slider_horizontal/transparente.png')" }}>
+                <div className="container">
+                  <div className="row slider-text align-items-center justify-content-start">
+                    <div className="banner-content col-lg-10 mx-auto element-animate">
+                      <div className="text-center">
+                        <h1 className="titulos titulobanner font_title_bold lh1 centrar"> Diseño Gráfico </h1>
+                        <span className="d-none d-lg-block"> Diseñamos tu logo e identidad gráfica </span>
+                      </div>
+                      <img src="/assets/img/slider_horizontal/diseno.png" className="img-fluid mx-auto pt-30" alt=""></img>
+                    </div>
+                  </div>
                 </div>
-                <img src="/assets/img/slider_horizontal/diseno.png" className="img-fluid mx-auto pt-30" alt=""></img>
               </div>
             </div>
           </div>
         </div>
-        <div className="slider-item banner-home" style={{ backgroundImage: "url('/assets/img/slider_horizontal/transparente.png')" }}>
-          <div className="container">
-            <div className="row slider-text align-items-center justify-content-start">
-              <div className="banner-content col-lg-10 mx-auto element-animate">
-                <div className="text-center">
-                  <h1 className="titulos titulobanner font_title_bold lh1 centrar"> Marketing Digital </h1>
-                  <span className="d-none d-lg-block"> Planes a tu medida </span>
+
+        <div className="owl-stage-outer">
+          <div className="owl-stage">
+            <div className="owl-item cloned">
+              <div className="slider-item banner-home" style={{ backgroundImage: "url('/assets/img/slider_horizontal/transparente.png')" }}>
+                <div className="container">
+                  <div className="row slider-text align-items-center justify-content-start">
+                    <div className="banner-content col-lg-10 mx-auto element-animate">
+                      <div className="text-center">
+                        <h1 className="titulos titulobanner font_title_bold lh1 centrar"> Marketing Digital </h1>
+                        <span className="d-none d-lg-block"> Planes a tu medida </span>
+                      </div>
+                      <img src="/assets/img/slider_horizontal/redes.png" className="img-fluid mx-auto pt-30" alt=""></img>
+                    </div>
+                  </div>
                 </div>
-                <img src="/assets/img/slider_horizontal/redes.png" className="img-fluid mx-auto pt-30" alt=""></img>
               </div>
             </div>
           </div>
         </div>
+        
       </section>
       <section className="section pt-60 panel" data-color="white" style={{ backgroundImage: "url('/assets/img/inicio/fondo.png')", backgroundSize: 'cover' }}>
         <div className="container pt-40">

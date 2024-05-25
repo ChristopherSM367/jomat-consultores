@@ -2893,11 +2893,12 @@ outline: none;
   margin-left: auto;
   margin-right: auto;
 }
-.div-img.hidden {
- /* overflow: hidden;*/
-
-}
+/* .div-img.hidden {
+  // overflow: hidden;
+} 
+*/
 .div-img .imgz {
+  transition: all 500ms ease-in-out;
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
   -ms-transition: all 500ms ease-in-out;
@@ -2981,7 +2982,7 @@ outline: none;
     position: absolute;
     top: 0;
     bottom: 0;
-    z-index: 998,
+    z-index: 998;
     left: 0;
     width: 15%;
     color: #fff;

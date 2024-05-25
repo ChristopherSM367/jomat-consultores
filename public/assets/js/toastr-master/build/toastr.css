@@ -50,6 +50,7 @@ button.toast-close-button {
   cursor: pointer;
   background: transparent;
   border: 0;
+  appearance: none;
   -webkit-appearance: none;
 }
 .toast-top-center {

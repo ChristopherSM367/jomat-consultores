@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 $(document).ready(function(){
  
   // hide our element on page load
@@ -32,6 +33,7 @@ $(document).ready(function(){
 
 
 
+     // eslint-disable-next-line no-unused-vars
      var options = {  /*este trozo iba en el header*/
     animateThreshold: 0,
     scrollPollInterval: 20

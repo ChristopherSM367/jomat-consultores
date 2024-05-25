@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 jQuery(function(){
     jQuery(window).scroll(function(){
         if(jQuery(this).scrollTop() > 49) {

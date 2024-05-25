@@ -1,9 +1,11 @@
+/* eslint-disable no-undef */
 
 
 $.validator.setDefaults({
     submitHandler: function () {
         var response = grecaptcha.getResponse();
         //recaptcha failed validation
+        // eslint-disable-next-line eqeqeq
         if (response.length == 0)
         {
             toastr.error('Debes completar el captcha para poder continuar');

@@ -22,7 +22,7 @@ const Head = () => {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossOrigin="anonymous" referrerPolicy="no-referrer"></link>
         <link rel="shortcut icon" href="/assets/img/logo/favicon.png"></link>
         <link rel="stylesheet" href="/assets/js/toastr-master/build/toastr.css"></link>

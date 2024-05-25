@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 // Sticky Plugin v1.0.0 for jQuery
 // =============
 // Author: Anthony Garand
@@ -86,6 +87,7 @@
           var stickyElement = $(this);
 
           var stickyId = stickyElement.attr('id');
+          // eslint-disable-next-line no-unused-vars
           var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName 
           var wrapper = $('<div></div>')
             .attr('id', stickyId + '-sticky-wrapper')
@@ -169,4 +171,5 @@
   $(function() {
     setTimeout(scroller, 0);
   });
+// eslint-disable-next-line no-undef
 })(jQuery);
