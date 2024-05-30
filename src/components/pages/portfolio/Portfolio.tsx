@@ -1,5 +1,4 @@
 import { Helmet, HelmetProvider } from "react-helmet-async"
-import Head from "../../includes/Head"
 import { Navbar } from "../../includes/Navbar"
 import { Footer } from "../../includes/Footer"
 
@@ -8,7 +7,6 @@ const Portfolio = () => {
 
   return (
     <>
-      <Head></Head>
       <HelmetProvider>
         <Helmet>
           <link rel="stylesheet" href="/assets/css/jCircle.css"></link>
@@ -233,20 +231,6 @@ const Portfolio = () => {
       <Footer></Footer>
 
       <script src="/assets/js/jCircle.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
-      <script src="/assets/js/vendor/bootstrap.min.js"></script>
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-      <script src="/assets/js/easing.min.js"></script>
-      <script src="/assets/js/hoverIntent.js"></script>
-      <script src="/assets/js/superfish.min.js"></script>
-      <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
-      <script src="/assets/js/jquery.nice-select.min.js"></script>
-      <script src="/assets/js/jquery.magnific-popup.min.js"></script>
-      <script src="/assets/js/owl.carousel.min.js"></script>
-      <script src="/assets/js/jquery.sticky.js"></script>
-      <script src="/assets/js/jquery.waypoints.min.js"></script>
-      <script src="/assets/js/main.js"></script>
-      <script type="text/javascript" src="/assets/js/scroll_logo.js"></script>
     </>
   )
 }

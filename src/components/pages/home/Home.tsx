@@ -1,7 +1,6 @@
 import { Navbar } from "../../includes/Navbar"
 import { Footer } from "../../includes/Footer"
 import { useEffect } from "react"
-import Head from "../../includes/Head"
 
 const Home = () => {
   useEffect(() => {
@@ -34,7 +33,6 @@ const Home = () => {
 
   return (
     <>
-      <Head></Head>
       <Navbar></Navbar>
       <div className="slider-item banner-home fondo-azul-base" style={{ backgroundImage: "url('/assets/img/slider_horizontal/base.jpg')" }}>
         <div className="degradado3"></div>
@@ -237,21 +235,7 @@ const Home = () => {
       <div id='toTop'><img src="/assets/img/inicio/up.png" className="img-fluid mx-auto" alt=""></img></div>
       <Footer></Footer>
       
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossOrigin="anonymous"></script>
-      <script type="text/javascript" src="/assets/js/scroll_logo.js"></script>
-      <script src="/assets/js/hoverIntent.js"></script>
       <script src="/assets/js/validation/contact_validation.js"></script>
-      <script src="/assets/js/main.js"></script>
-      <script src="/assets/js/jquery.sticky.js"></script>
-      <script src="/assets/js/vendor/bootstrap.min.js"></script>
-      <script src="/assets/js/easing.min.js"></script>
-      <script src="/assets/js/superfish.min.js"></script>
-      <script src="/assets/js/owl.carousel.min.js"></script>
-      <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
-      <script src="/assets/js/jquery.nice-select.min.js"></script>
-      <script src="/assets/js/jquery.waypoints.min.js"></script>
-      <script src="/assets/js/jquery.magnific-popup.min.js"></script>
     </>
   )
 }

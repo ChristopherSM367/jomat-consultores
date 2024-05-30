@@ -1,6 +1,6 @@
 /* eslint-disable default-case */
 /* eslint-disable no-mixed-operators */
-/* eslint-disable no-undef */
+
 /*!
  * jQuery Validation Plugin v1.17.0
  *
