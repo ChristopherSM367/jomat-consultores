@@ -142,7 +142,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div id='toTop'><img src="/assets/img/inicio/up.png" className="img-fluid mx-auto" alt=""></img></div>
       <Footer></Footer>
 
       <script src="/assets/js/validation/contact_validation.js"></script>

@@ -635,7 +635,7 @@
     });
     // owl carousel
 
-    $(window).scroll(function() {
+    $(window).on('scroll', function() {
         if ($(this).scrollTop()) {
             $('#toTop').fadeIn();
         } else {
@@ -643,7 +643,7 @@
         }
     });
 
-    $("#toTop").click(function () {
+    $("#toTop").on('click', function () {
         //1 second of animation time
         //html works for FFX but not Chrome
         //body works for Chrome but not FFX
@@ -655,5 +655,4 @@
 
 
 
-// eslint-disable-next-line no-undef
 })(jQuery);

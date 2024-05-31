@@ -5,6 +5,7 @@ export const Footer = () => {
 
   return (
     <>
+      <div id='toTop'><img src="/assets/img/inicio/up.png" className="img-fluid mx-auto" alt=""></img></div>
       <footer className="container-fluid fondo_azul4 col-12 fs-16">
         <div className="container pt-70 pb-70">
           <div className="row pb-0">
