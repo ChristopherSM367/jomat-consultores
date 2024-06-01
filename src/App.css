@@ -15,7 +15,7 @@
   max-width: 120px;
 }
 
-.panel.pt-70.pb-70.mt-50.animate.violeta {
+.panel.pt-100.pb-70.mt-50.animate.violeta {
   background-image: url('/public/assets/img/inicio/fondo2.png');
   background-size: auto;
   background-position: 0% 36%;
@@ -26,4 +26,9 @@
   display: inline !important;
   float: left !important;
   margin-left: 0px !important;
+}
+
+.owl-item {
+  width: 1263px;
+  margin-right: 10px;
 }

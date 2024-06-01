@@ -55,11 +55,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        
-        <div className="owl-stage-outer">
-          <div className="owl-stage">
+
             <div className="owl-item cloned">
               <div className="slider-item banner-home" style={{ backgroundImage: "url('/assets/img/slider_horizontal/transparente.png')" }}>
                 <div className="container">
@@ -75,11 +71,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div className="owl-stage-outer">
-          <div className="owl-stage">
             <div className="owl-item cloned">
               <div className="slider-item banner-home" style={{ backgroundImage: "url('/assets/img/slider_horizontal/transparente.png')" }}>
                 <div className="container">
@@ -97,7 +89,14 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
+        <div className="owl-nav">
+          <button role="presentation" className="owl-prev">
+            <span className="ion-ion-ios-arrow-thin-left"></span>
+          </button>
+          <button role="presentation" className="owl-next">
+            <span className="ion-ion-ios-arrow-thin-right"></span>
+          </button>
+        </div>
       </section>
       <section className="section pt-60 panel" data-color="white" style={{ backgroundImage: "url('/assets/img/inicio/fondo.png')", backgroundSize: 'cover' }}>
         <div className="container pt-40">
@@ -136,7 +135,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="panel pt-70 pb-70 mt-50 animate violeta" data-color="violet">
+      <section className="panel pt-100 pb-70 mt-50 animate violeta" data-color="violet">
         <div className="container pb-60">
           <p className="font_title_bold fs-70 color_blanco lh-1_1 text-center"> Nuestros Servicios </p>
           <p className="fs-30 fnt_title lh-1_1 color_blanco text-center">
