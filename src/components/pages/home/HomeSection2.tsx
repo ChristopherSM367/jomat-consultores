@@ -37,9 +37,17 @@ interface FeatureProps {
 
 const Feature: React.FC<FeatureProps> = ({ imgSrc, altText, title, description }) => (
   <div className="col-lg-4 pt-30 text-center">
-    <img src={ imgSrc } className="img-fluid mx-auto tam-peq" alt={ altText }></img>
-    <p className="fnt_title fs-35 text-center">{ title }</p>
-    <p className="text-center fs-18">{ description }</p>
+    <img 
+      src={ imgSrc } 
+      className="img-fluid mx-auto tam-peq" 
+      alt={ altText }
+    ></img>
+    <p className="fnt_title fs-35 text-center">
+      { title }
+    </p>
+    <p className="text-center fs-18">
+      { description }
+    </p>
   </div>
 );
 
@@ -54,7 +62,10 @@ const HomeSection2 = () => (
       </p>
       <div className="row pt-10">
         { features.map((feature, index) => (
-          <Feature key={ index } { ...feature }></Feature>
+          <Feature 
+            key={ index } 
+            { ...feature }
+          ></Feature>
         )) }
       </div>
     </div>

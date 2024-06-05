@@ -62,8 +62,7 @@ const HomeSlider = () => {
                     src={ slide.imgUrl }
                     className="img-fluid mx-auto pt-30"
                     alt={ slide.altText }
-                  >
-                  </img>
+                  ></img>
                 </div>
               </div>
             </div>

@@ -37,9 +37,17 @@ interface ServiceProps {
 
 const Service: React.FC<ServiceProps> = ({ imgSrc, altText, title, description }) => (
   <div className="col-lg-4 pt-30 text-center">
-    <img src={ imgSrc } className="img-fluid mx-auto tam-peq" alt={ altText }></img>
-    <p className="fnt_title fs-35 text-center color_blanco">{ title }</p>
-    <p className="text-center fs-18 color_blanco">{ description }</p>
+    <img 
+      src={ imgSrc } 
+      className="img-fluid mx-auto tam-peq" 
+      alt={ altText }
+    ></img>
+    <p className="fnt_title fs-35 text-center color_blanco">
+      { title }
+    </p>
+    <p className="text-center fs-18 color_blanco">
+      { description }
+    </p>
   </div>
 );
 
@@ -54,7 +62,10 @@ const HomeSection3 = () => (
       </p>
       <div className="row pt-10">
         { services.map((service, index) => (
-          <Service key={ index } { ...service }></Service>
+          <Service 
+            key={ index } 
+            { ...service }
+          ></Service>
         )) }
       </div>
     </div>

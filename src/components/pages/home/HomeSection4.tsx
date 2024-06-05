@@ -13,7 +13,15 @@ const InputContact: React.FC<InputContactProps> = ({ type, id, name, placeholder
   <div className="col-lg-12">
     <div className="form-group">
       <div className="validation">
-        <input type={ type } className="form-control2 input-lg" id={ id } name={ name } placeholder={ placeholder } pattern={ pattern } required={ required }></input>
+        <input 
+          type={ type } 
+          className="form-control2 input-lg" 
+          id={ id } 
+          name={ name } 
+          placeholder={ placeholder } 
+          pattern={ pattern } 
+          required={ required }
+        ></input>
       </div>
     </div>
   </div>

@@ -1,0 +1,75 @@
+<section id="nosotros">
+    <div className="container pt-100 pb-100">
+        <div className="row pt-0 pb-100 align-items-center justify-content-start">
+        <div className="col-lg-6 ">
+            <p className="font_title_bold fs-70 color_negro lh-1_1">Páginas Web</p>
+            <p className="fs-35 fnt_title lh-1_1 mb-0 pb-10">
+            Tu marca o negocio en la nube
+            </p>
+            <p className="fs-18">Desarrollamos tu sitio web resposivo, que sea rápido y tenga una buena experiencia de usuario. </p>
+        </div>
+        <div className="col-lg-6 ">
+            <div data-aos="flip-left" data-aos-duration="2000">
+            <img src="/assets/img/servicios/sitioweb.png" alt="" className="img-fluid mx-auto"></img>
+            </div>
+        </div>
+        </div>
+        <div className="row pt-100 pb-100 align-items-center justify-content-start">
+        <div className="col-lg-6 order-lg-2">
+            <p className="font_title_bold fs-70 color_negro lh-1_1">Diseño Gráfico</p>
+            <p className="fs-35 fnt_title lh-1_1 mb-0 pb-10">
+            Refresca tu imagen para llamar más la atencion.
+            </p>
+            <p className="fs-18">Diseño de identidad, folletos, manuales y montajes.</p>
+        </div>
+        <div className="col-lg-6 order-lg-1">
+            <div data-aos="flip-left" data-aos-duration="2000">
+            <img src="/assets/img/servicios/diseno.png" alt="diseno" className="img-fluid mx-auto"></img>
+            </div>
+        </div>
+        </div>
+        <div className="row pt-100 pb-100 align-items-center justify-content-start">
+        <div className="col-lg-6 ">
+            <p className="font_title_bold fs-70 color_negro lh-1_1">Marketing Digital</p>
+            <p className="fs-35 fnt_title lh-1_1 mb-0 pb-10">
+            Los resultados que esperas
+            </p>
+            <p className="fs-18">Trabaja con tu propio presupuesto e impulsamos tu marca para llegar más lejos.</p>
+        </div>
+        <div className="col-lg-6 ">
+            <div data-aos="flip-left" data-aos-duration="2000">
+            <img src="/assets/img/servicios/marketing.png" alt="marketing" className="img-fluid mx-auto"></img>
+            </div>
+        </div>
+        </div>
+        <div className="row pt-100 pb-100 align-items-center justify-content-start">
+        <div className="col-lg-6 order-lg-2">
+            <p className="font_title_bold fs-70 color_negro lh-1_1">Software</p>
+            <p className="fs-35 fnt_title lh-1_1 mb-0 pb-10">
+            Sistema personalizado
+            </p>
+            <p className="fs-18">Herramientas diseñadas a la medida según tus necesidades. Hacemos lo que tu necesitas.</p>
+        </div>
+        <div className="col-lg-6 order-lg-1">
+            <div data-aos="flip-left" data-aos-duration="2000">
+            <img src="/assets/img/servicios/software.png" alt="software" className="img-fluid mx-auto"></img>
+            </div>
+        </div>
+        </div>
+        <div className="row pt-100 pb-100 align-items-center justify-content-start">
+        <div className="col-lg-6 ">
+            <p className="font_title_bold fs-70 color_negro lh-1_1">Selección Personal</p>
+            <p className="fs-35 fnt_title lh-1_1 mb-0 pb-10">
+            Personal calificado para la organización
+            </p>
+            <p className="fs-18">Contamos con un equipo de psicólogos laborales especialistas en desarrollo
+            organizacional y reclutamiento.</p>
+        </div>
+        <div className="col-lg-6 ">
+            <div data-aos="flip-left" data-aos-duration="2000">
+            <img src="/assets/img/servicios/personal.png" alt="seleccion-personal" className="img-fluid mx-auto"></img>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
