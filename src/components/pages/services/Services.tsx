@@ -1,6 +1,6 @@
 import { Helmet, HelmetProvider } from "react-helmet-async"
 import { Navbar } from "../../includes/Navbar"
-import { Footer } from "../../includes/Footer"
+import Footer from "../../includes/Footer"
 
 const Services = () => {
 

@@ -1,6 +1,28 @@
-export const Footer = () => {
+import { useEffect } from "react";
+
+const Footer = () => {
   const abrirLink = (url: string) => () => {
     window.open(url, '_blank');
+  };
+
+  useEffect(() => {
+    const toTopButton = document.getElementById('toTop');
+    if (toTopButton) {
+      toTopButton.addEventListener('click', scrollToTop);
+    }
+
+    return () => {
+      if (toTopButton) {
+        toTopButton.removeEventListener('click', scrollToTop);
+      }
+    };
+  }, []);
+
+  const scrollToTop = (): void => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -23,8 +45,8 @@ export const Footer = () => {
               <p className="fs-20 fnt_title color_blanco2"> CONTACTO </p>
               <p>
                 <a href="mailto:contacto@jomatconsultores.com" className="color_blanco"> contacto@jomatconsultores.com </a><br></br>
-                <a href="tel:3347376654;708" className="color_blanco"><i className="fas fa-phone"></i> 33 4737 6654 ext;708 </a><br></br>
-                <a href="https://api.whatsapp.com/send?phone=+5213311226564&amp;text=Me comunico del sitio JomatConsultores.com" className="color_blanco"><i className="fab fa-whatsapp"></i> +52 1 33 1122 6564 </a>
+                <a href="tel:3347376654;708" className="color_blanco"><i className="fas fa-phone" style={{ width: '.8em', height: '.8em' }}></i> 33 4737 6654 ext;708 </a><br></br>
+                <a href="https://api.whatsapp.com/send?phone=+5213311226564&amp;text=Me comunico del sitio JomatConsultores.com" className="color_blanco"><i className="fab fa-whatsapp" style={{ width: '.8em', height: '.8em' }}></i> +52 1 33 1122 6564 </a>
               </p>
             </div>
             <div className="col-md-6 col-lg-3 pt-30 pb-30">
@@ -44,7 +66,7 @@ export const Footer = () => {
               <p className="color_blanco">
                 <a href="Contact" className="color_blanco"> Ayuda </a><br></br>
                 <a href="AboutUs" className="color_blanco"> Acerca de </a><br></br>
-                <a href="aviso.pdf" target="_blank" className="color_blanco"> Aviso de Privacidad </a><br></br>
+                <a href="/assets/aviso.pdf" target="_blank" className="color_blanco"> Aviso de Privacidad </a><br></br>
               </p>
             </div>
           </div>
@@ -61,3 +83,5 @@ export const Footer = () => {
     </>
   )
 }
+
+export default Footer

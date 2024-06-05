@@ -1,14 +1,16 @@
-.nav-menu-container ul {
-  margin-top: 28px;
-}
-
-.nav-menu-container ul li {
+#nav-menu-container ul li {
   line-height: 4em;
 }
 
 #logo-img {
   max-width: 240px;
   height: auto;
+}
+
+.social {
+  width: 70%;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .img-fluid.mx-auto.tam-peq {
@@ -28,7 +30,35 @@
   margin-left: 0px !important;
 }
 
-.owl-item {
-  width: 1263px;
-  margin-right: 10px;
+.slick-prev {
+  left: 25px !important;
+}
+
+.slick-next {
+  right: 40px !important;
+}
+
+.slick-arrow,
+.slick-arrow::before {
+  font-size: 40px !important;
+  align-items: center;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+
+.major-caousel.js-carousel-1a.owl-carousel .slick-slide {
+  width: 525px !important;
+  margin-right: 30px;
+}
+
+.slick-slide .slider-item.banner-home {
+  transition: opacity .5s ease-in-out;
+  opacity: 0.5;
+}
+
+.slick-active .slider-item.banner-home {
+  opacity: 1 !important;
+  transition: opacity .5s ease-in-out;
 }
