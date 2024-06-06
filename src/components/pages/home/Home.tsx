@@ -26,10 +26,8 @@ const Home = () => {
 
     window.addEventListener('scroll', manejarScroll);
 
-    // Llamar al manejador de scroll una vez para establecer el estado inicial
     manejarScroll();
 
-    // Limpiar el event listener cuando el componente se desmonte
     return () => {
       window.removeEventListener('scroll', manejarScroll);
     };

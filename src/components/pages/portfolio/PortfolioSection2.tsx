@@ -147,57 +147,55 @@ const MarketingInfo: React.FC<MarketingInfoProps> = ({ info }) => (
   </div>
 );
 
-const PortfolioSection2 = () => {
-  return (
-    <>
-      <section id="potafolio">
-        <div className="container pt-100 pb-100">
-          <ul id="tabs" className="nav nav-tabs row">
-            { tabsData.map((tab) => (
-              <Tab key={ tab.target } { ...tab }></Tab>
-            )) }
-          </ul>
-          <br></br>
-          <div id="tabsContent" className="tab-content">
-            <div id="home1" className="tab-pane fade">
-              <div className="row">
-                <div className="col-lg-4 pt-30 text-center">
-                  <div className="div-custom2">
-                    <img src="/assets/img/portafolio/reutvi.PNG" className="img-fluid mx-auto pointer" alt="retuvi" data-toggle="modal" data-target="#exampleModalCenter"></img>
-                    <p className="text-center fs-25 pt-10 fnt_title color_negro"> Web Retuvi </p>
-                  </div>
+const PortfolioSection2 = () => (
+  <>
+    <section id="potafolio">
+      <div className="container pt-100 pb-100">
+        <ul id="tabs" className="nav nav-tabs row">
+          { tabsData.map((tab) => (
+            <Tab key={ tab.target } { ...tab }></Tab>
+          )) }
+        </ul>
+        <br></br>
+        <div id="tabsContent" className="tab-content">
+          <div id="home1" className="tab-pane fade">
+            <div className="row">
+              <div className="col-lg-4 pt-30 text-center">
+                <div className="div-custom2">
+                  <img src="/assets/img/portafolio/reutvi.PNG" className="img-fluid mx-auto pointer" alt="retuvi" data-toggle="modal" data-target="#exampleModalCenter"></img>
+                  <p className="text-center fs-25 pt-10 fnt_title color_negro"> Web Retuvi </p>
                 </div>
               </div>
             </div>
-            <div id="diseno" className="tab-pane fade active show">
-              <ImagePortfolio images={ disenoImages }></ImagePortfolio>
-            </div>
-            <div id="marketing" className="tab-pane fade">
-              { marketingData.map((info) => (
-                <MarketingInfo key={ info.target } info={ info }></MarketingInfo>
-              )) }
-            </div>
           </div>
-        </div>
-      </section>
-      <div className="modal fade" id="exampleModalCenter" tabIndex={ -1 } role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title fnt_title fs-30" id="exampleModalLongTitle"> Retuvi Clínica Integral </h5>
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"> &times; </span>
-              </button>
-            </div>
-            <div className="modal-body">
-              <img src="/assets/img/portafolio/reutvi2.PNG" className="img-fluid mx-auto" alt="retuvi"></img>
-              <p className="fs-20"> Página responsiva, Galeria e Informacion de contacto </p>
-            </div>
+          <div id="diseno" className="tab-pane fade active show">
+            <ImagePortfolio images={ disenoImages }></ImagePortfolio>
+          </div>
+          <div id="marketing" className="tab-pane fade">
+            { marketingData.map((info) => (
+              <MarketingInfo key={ info.target } info={ info }></MarketingInfo>
+            )) }
           </div>
         </div>
       </div>
-    </>
-  )
-}
+    </section>
+    <div className="modal fade" id="exampleModalCenter" tabIndex={ -1 } role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div className="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h5 className="modal-title fnt_title fs-30" id="exampleModalLongTitle"> Retuvi Clínica Integral </h5>
+            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"> &times; </span>
+            </button>
+          </div>
+          <div className="modal-body">
+            <img src="/assets/img/portafolio/reutvi2.PNG" className="img-fluid mx-auto" alt="retuvi"></img>
+            <p className="fs-20"> Página responsiva, Galeria e Informacion de contacto </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
+)
 
 export default PortfolioSection2
