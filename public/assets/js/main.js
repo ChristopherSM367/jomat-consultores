@@ -101,7 +101,6 @@
     });
     // Smooth scroll for the menu and links with .scrollto classes
     $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
-        // eslint-disable-next-line no-restricted-globals
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             var target = $(this.hash);
             if (target.length) {
