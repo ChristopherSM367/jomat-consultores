@@ -25,6 +25,25 @@ const Footer = () => {
     });
   };
 
+  useEffect(() => {
+    const hideLoader = () => {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        loader.classList.remove('show');
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      hideLoader();
+    } else {
+      window.addEventListener('load', hideLoader);
+
+      return () => {
+        window.removeEventListener('load', hideLoader);
+      };
+    }
+  }, []);
+
   return (
     <>
       <div id='toTop'><img src="/assets/img/inicio/up.png" className="img-fluid mx-auto" alt=""></img></div>
@@ -79,6 +98,12 @@ const Footer = () => {
             <p> WhatsApp </p>
           </li>
         </ul>
+      </div>
+      <div id="loader" className="show fullscreen">
+        <svg className="circular" width="48px" height="48px">
+          <circle className="path-bg" cx="24" cy="24" r="22" fill="none" strokeWidth="4" stroke="#eeeeee" />
+          <circle className="path" cx="24" cy="24" r="22" fill="none" strokeWidth="4" strokeMiterlimit="10" stroke="#00B398" />
+        </svg>
       </div>
     </>
   )

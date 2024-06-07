@@ -24,6 +24,18 @@ const sliderData = [
   },
 ];
 
+interface ArrowProps {
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+}
+
+const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => (
+  <button className="slick-prev" onClick={ onClick }></button>
+);
+
+const NextArrow: React.FC<ArrowProps> = ({ onClick }) => (
+  <button className="slick-next" onClick={ onClick }></button>
+);
+
 const HomeSlider = () => {
   const settings = {
     dots: true,
@@ -34,8 +46,8 @@ const HomeSlider = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     fade: true,
-    nextArrow: <button className="slick-next"></button>,
-    prevArrow: <button className="slick-prev"></button>,
+    nextArrow: <NextArrow></NextArrow>,
+    prevArrow: <PrevArrow></PrevArrow>,
   };
 
   return (
