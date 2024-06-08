@@ -16,7 +16,7 @@ const formData = [
   {
     type: 'tel',
     idName: 'tel',
-    placeholder: 'Móvil',
+    placeholder: 'Teléfono',
     pattern: '[0-9]{10}',
     required: false,
   },

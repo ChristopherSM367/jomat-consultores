@@ -31,11 +31,11 @@
 }
 
 .slick-prev {
-  left: 25px !important;
+  left: 35px !important;
 }
 
 .slick-next {
-  right: 40px !important;
+  right: 50px !important;
 }
 
 .slick-prev, 
@@ -49,6 +49,11 @@
 .slick-prev, 
 .slick-next {
   z-index: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-family: math !important;
 }
 
 .major-caousel.js-carousel-1a.owl-carousel .slick-slide {

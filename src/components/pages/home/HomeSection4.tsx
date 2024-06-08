@@ -42,7 +42,7 @@ const ContactForm = () => (
       </div>
       <div className="col-12">
         <div className="captcha">
-          <div className="g-recaptcha" data-sitekey="6LeqEmEUAAAAADUQu6GVSONaaT-fVeZcmZ7bAWrE"></div>
+          <div className="g-recaptcha" data-sitekey="6Lev_28UAAAAAIDXSY4sao-XRJz-hrKOwZJaQzPo"></div>
         </div>
         <br></br>
       </div>
