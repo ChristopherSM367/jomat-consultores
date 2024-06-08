@@ -1,4 +1,4 @@
-import { Navbar } from "../../includes/Navbar"
+import Navbar from "../../includes/Navbar"
 import Footer from "../../includes/Footer"
 import ContactSection2 from "./ContactSection2"
 

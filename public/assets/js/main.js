@@ -67,19 +67,16 @@
         $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>');
         $('body').append('<div id="mobile-body-overly"></div>');
         $('#mobile-nav').find('.menu-has-children').prepend('<i class="lnr lnr-chevron-down"></i>');
-
         $(document).on('click', '.menu-has-children i', function(e) {
             $(this).next().toggleClass('menu-item-active');
             $(this).nextAll('ul').eq(0).slideToggle();
             $(this).toggleClass("lnr-chevron-up lnr-chevron-down");
         });
-
         $(document).on('click', '#mobile-nav-toggle', function(e) {
             $('body').toggleClass('mobile-nav-active');
             $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
             $('#mobile-body-overly').toggle();
         });
-
         $(document).click(function(e) {
             var container = $("#mobile-nav, #mobile-nav-toggle");
             if (!container.is(e.target) && container.has(e.target).length === 0) {
@@ -97,7 +94,6 @@
         // $('body').removeClass('lnr-cross');
         $('#mobile-nav-toggle i').removeClass('lnr-cross');
         // $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
-
     });
     // Smooth scroll for the menu and links with .scrollto classes
     $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
@@ -105,10 +101,8 @@
             var target = $(this.hash);
             if (target.length) {
                 var top_space = 0;
-
                 if ($('#header').length) {
                     top_space = $('#header').outerHeight();
-
                     if( ! $('#header').hasClass('header-fixed') ) {
                         // eslint-disable-next-line no-self-assign
                         top_space = top_space;
@@ -117,12 +111,10 @@
                 $('html, body').animate({
                     scrollTop: target.offset().top - top_space
                 }, 1500, 'easeInOutExpo');
-
                 if ($(this).parents('.nav-menu').length) {
                     $('.nav-menu .menu-active').removeClass('menu-active');
                     $(this).closest('li').addClass('menu-active');
                 }
-
                 if ($('body').hasClass('mobile-nav-active')) {
                     $('body').removeClass('mobile-nav-active');
                     $('#mobile-nav-toggle i').toggleClass('lnr-times lnr-bars');
@@ -142,13 +134,9 @@
             }
             var $subMenu = $(this).next('.dropdown-menu');
             $subMenu.toggleClass('show');
-
-
             $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
                 $('.dropdown-submenu .show').removeClass('show');
             });
-
-
             return false;
         });
     });
@@ -170,14 +158,10 @@
             // eslint-disable-next-line no-unused-vars
             var i = 0;
             $('.element-animate').waypoint( function( direction ) {
-
                 if( direction === 'down' && !$(this.element).hasClass('element-animated') ) {
-
                     i++;
-
                     $(this.element).addClass('item-animate');
                     setTimeout(function(){
-
                         $('body .element-animate.item-animate').each(function(k){
                             var el = $(this);
                             setTimeout( function () {
@@ -218,14 +202,10 @@
             var i = 0;
             // otro efecto
             $('.animate2').waypoint( function( direction ) {
-
                 if( direction === 'down' && !$(this.element).hasClass('animate_animated2') ) {
-
                     i++;
-
                     $(this.element).addClass('item-animate');
                     setTimeout(function(){
-
                         $('body .animate2.item-animate').each(function(k){
                             var el = $(this);
                             setTimeout( function ()  {
@@ -245,42 +225,36 @@
                     }, 100);
                 }
             } ,
-                { offset: '95%' } );
+            { offset: '95%' } );
             // otro efecto
             $('.animate3').waypoint( function( direction ) {
-
-                    if( direction === 'down' && !$(this.element).hasClass('animate_animated3') ) {
-
-                        i++;
-
-                        $(this.element).addClass('item-animate');
-                        setTimeout(function(){
-
-                            $('body .animate3.item-animate').each(function(k){
-                                var el = $(this);
-                                setTimeout( function ()  {
-                                    var effect = el.data('animate-effect');
-                                    if ( effect === 'zoomIn') {
-                                        el.addClass('zoomIn animate_animated3');
-                                    } else if ( effect === 'zoomIn') {
-                                        el.addClass('zoomIn animate_animated3');
-                                    } else if ( effect === 'zoomIn') {
-                                        el.addClass('zoomIn animate_animated3');
-                                    } else {
-                                        el.addClass('zoomIn animate_animated3');
-                                    }
-                                    el.removeClass('item-animate');
-                                },  k * 100);
-                            });
-                        }, 100);
-                    }
-                } ,
-                { offset: '95%' } );
+                if( direction === 'down' && !$(this.element).hasClass('animate_animated3') ) {
+                    i++;
+                    $(this.element).addClass('item-animate');
+                    setTimeout(function(){
+                        $('body .animate3.item-animate').each(function(k){
+                            var el = $(this);
+                            setTimeout( function ()  {
+                                var effect = el.data('animate-effect');
+                                if ( effect === 'zoomIn') {
+                                    el.addClass('zoomIn animate_animated3');
+                                } else if ( effect === 'zoomIn') {
+                                    el.addClass('zoomIn animate_animated3');
+                                } else if ( effect === 'zoomIn') {
+                                    el.addClass('zoomIn animate_animated3');
+                                } else {
+                                    el.addClass('zoomIn animate_animated3');
+                                }
+                                el.removeClass('item-animate');
+                            },  k * 100);
+                        });
+                    }, 100);
+                }
+            } ,
+            { offset: '95%' } );
         };
         contentWayPoint2();
     });
-
-
   // Header scroll class
   $(window).scroll(function() {
     if ($(this).scrollTop() > 49) {

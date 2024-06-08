@@ -1,4 +1,4 @@
-import { Navbar } from "../../includes/Navbar"
+import Navbar from "../../includes/Navbar"
 import Footer from "../../includes/Footer"
 import { useEffect } from "react"
 import HomeSlider from "./HomeSlider"

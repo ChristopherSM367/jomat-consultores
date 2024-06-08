@@ -38,13 +38,16 @@
   right: 40px !important;
 }
 
-.slick-arrow,
-.slick-arrow::before {
+.slick-prev, 
+.slick-next,
+.slick-prev::before, 
+.slick-next::before {
   font-size: 40px !important;
   align-items: center;
 }
 
-.slick-prev, .slick-next {
+.slick-prev, 
+.slick-next {
   z-index: 1;
 }
 
