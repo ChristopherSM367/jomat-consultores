@@ -83,8 +83,8 @@ const Footer = () => {
             <div className="col-md-6 col-lg-3  pt-30">
               <p className="fs-20 fnt_title color_blanco2"> OTROS LINKS </p>
               <p className="color_blanco">
-                <a href="Contact" className="color_blanco"> Ayuda </a><br></br>
-                <a href="AboutUs" className="color_blanco"> Acerca de </a><br></br>
+                <a href="contacto" className="color_blanco"> Ayuda </a><br></br>
+                <a href="acerca-de" className="color_blanco"> Acerca de </a><br></br>
                 <a href="/assets/aviso.pdf" target="_blank" className="color_blanco"> Aviso de Privacidad </a><br></br>
               </p>
             </div>
